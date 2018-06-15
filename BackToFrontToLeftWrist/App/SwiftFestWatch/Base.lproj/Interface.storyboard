@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="UAq-s1-Rpy">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14031"/>
+    </dependencies>
+    <scenes>
+        <!--Map Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="MapInterfaceController" customModule="SwiftFestWatch_Extension">
+                    <items>
+                        <label alignment="left" text="Open in Maps" id="K3w-5e-3xz"/>
+                        <group width="1" height="3" alignment="left" id="ZwD-2G-fCU"/>
+                        <map height="100" alignment="left" id="wXC-6c-7Jn"/>
+                    </items>
+                    <connections>
+                        <outlet property="map" destination="wXC-6c-7Jn" id="9pM-N9-lHE"/>
+                        <outlet property="testLabel" destination="K3w-5e-3xz" id="0bT-V9-COw"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="391" y="130"/>
+        </scene>
+        <!--Reservation Details Interface Controller-->
+        <scene sceneID="5a8-pV-pRn">
+            <objects>
+                <controller id="UAq-s1-Rpy" customClass="ReservationDetailsInterfaceController" customModule="SwiftFestWatch_Extension">
+                    <items>
+                        <group width="1" alignment="center" layout="vertical" id="BQk-TY-u2o">
+                            <items>
+                                <label width="136" alignment="left" text="Center" textAlignment="center" baselineAdjustment="alignCenters" id="BRc-xC-5kZ">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label width="134" alignment="left" text="Label" textAlignment="center" id="lIu-q1-WPz"/>
+                            </items>
+                        </group>
+                        <group width="1" height="53" alignment="left" id="xko-dr-nOj"/>
+                        <button width="1" alignment="left" title="Edit Reservation" id="Uox-R4-5Nm">
+                            <connections>
+                                <segue destination="Ixt-YE-rHc" kind="modal" id="eQs-Wq-nZq"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="reservationTimeLabel" destination="lIu-q1-WPz" id="N7l-WZ-uFq"/>
+                        <outlet property="restaurantNameLabel" destination="BRc-xC-5kZ" id="3hM-Yj-EUG"/>
+                        <segue destination="AgC-eL-Hgc" kind="relationship" relationship="nextPage" id="B9r-Jh-kgF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="112" y="130"/>
+        </scene>
+        <!--Edit Reservation-->
+        <scene sceneID="sUV-W2-DHR">
+            <objects>
+                <controller title="Edit Reservation" id="Ixt-YE-rHc" customClass="EditReservationInterfaceController" customModule="SwiftFestWatch_Extension">
+                    <items>
+                        <group width="1" height="19" alignment="left" id="u9p-Zr-sEV"/>
+                        <button width="1" alignment="left" title="Party Size" id="8Q8-b4-YWV">
+                            <connections>
+                                <segue destination="pYS-SK-h3H" kind="modal" identifier="party" id="nBB-Cj-DNX"/>
+                            </connections>
+                        </button>
+                        <group width="1" height="11" alignment="left" id="xyS-5c-SJJ"/>
+                        <button width="1" alignment="left" title="Time" id="bQp-iq-IBv">
+                            <connections>
+                                <segue destination="pYS-SK-h3H" kind="modal" identifier="time" id="Cdc-Kv-KIC"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="112" y="506"/>
+        </scene>
+        <!--Stepper Interface Controller-->
+        <scene sceneID="3g0-fx-aPj">
+            <objects>
+                <controller id="pYS-SK-h3H" customClass="StepperInterfaceController" customModule="SwiftFestWatch_Extension">
+                    <items>
+                        <button width="39" height="39" alignment="center" backgroundImage="plus" id="9rh-Km-nSe">
+                            <connections>
+                                <action selector="plusTapped" destination="pYS-SK-h3H" id="LqB-Mc-8nT"/>
+                            </connections>
+                        </button>
+                        <group width="1" height="13" alignment="left" id="3ZK-zg-T1K"/>
+                        <label width="136" alignment="left" text="Label" textAlignment="center" id="Jzm-mk-2gI"/>
+                        <group width="1" height="13" alignment="left" id="bMb-yu-U0W"/>
+                        <button width="39" height="39" alignment="center" backgroundImage="minus" id="ob2-fJ-er3">
+                            <connections>
+                                <action selector="minusTapped" destination="pYS-SK-h3H" id="J8l-ZP-N3P"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="valueLabel" destination="Jzm-mk-2gI" id="fYK-7K-SAE"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="407" y="504"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="nBB-Cj-DNX"/>
+    </inferredMetricsTieBreakers>
+</document>
