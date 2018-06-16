@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D0C76FC20A8893300ECC784 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C76FA20A8893300ECC784 /* Interface.storyboard */; };
+		6D0C76FE20A8893400ECC784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C76FD20A8893400ECC784 /* Assets.xcassets */; };
+		6D0C770520A8893400ECC784 /* SwiftFestWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6D0C770420A8893400ECC784 /* SwiftFestWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6D0C770A20A8893400ECC784 /* MapInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C770920A8893400ECC784 /* MapInterfaceController.swift */; };
+		6D0C770C20A8893400ECC784 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C770B20A8893400ECC784 /* ExtensionDelegate.swift */; };
+		6D0C770E20A8893500ECC784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C770D20A8893500ECC784 /* Assets.xcassets */; };
+		6D0C771220A8893500ECC784 /* SwiftFestWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6D0C76F820A8893300ECC784 /* SwiftFestWatch.app */; };
+		6D0C772020A895C400ECC784 /* WatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C771F20A895C400ECC784 /* WatchManager.swift */; };
+		6D0C772120A896BE00ECC784 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD91784208BF0E700AD31C6 /* Reservation.swift */; };
+		6D0C772220A896C200ECC784 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB8CB4D1FA533450038365A /* Restaurant.swift */; };
+		6D0C772420A8E59700ECC784 /* ReservationDetailsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C772320A8E59700ECC784 /* ReservationDetailsInterfaceController.swift */; };
+		6D0C772620A8E5BC00ECC784 /* EditReservationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D0C772520A8E5BC00ECC784 /* EditReservationInterfaceController.swift */; };
+		6D81DBF0209502CD0030987B /* ReservationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D81DBEF209502CD0030987B /* ReservationDetailsViewController.swift */; };
+		6D92849B2083DB84000B5C7B /* CreateReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D92849A2083DB84000B5C7B /* CreateReservationViewController.swift */; };
+		6DAE0A6B20A91E5B0070EFB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C76FD20A8893400ECC784 /* Assets.xcassets */; };
+		6DAE0A6D20B1AF160070EFB6 /* StepperInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DAE0A6C20B1AF160070EFB6 /* StepperInterfaceController.swift */; };
+		6DB8CB4B1FA52A3F0038365A /* RestaurantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB8CB4A1FA52A3F0038365A /* RestaurantsTableViewController.swift */; };
+		6DB8CB4E1FA533450038365A /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB8CB4D1FA533450038365A /* Restaurant.swift */; };
+		6DB8CB501FA812800038365A /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB8CB4F1FA812800038365A /* RestaurantDetailViewController.swift */; };
+		6DD91785208BF0E700AD31C6 /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD91784208BF0E700AD31C6 /* Reservation.swift */; };
+		6DD91787208BF44300AD31C6 /* ReservationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD91786208BF44300AD31C6 /* ReservationsTableViewController.swift */; };
+		6DEA782F1F895CAA00345B38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEA782E1F895CAA00345B38 /* AppDelegate.swift */; };
+		6DEA78341F895CAA00345B38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA78321F895CAA00345B38 /* Main.storyboard */; };
+		6DEA78361F895CAA00345B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA78351F895CAA00345B38 /* Assets.xcassets */; };
+		6DEA78391F895CAA00345B38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DEA78371F895CAA00345B38 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D0C770620A8893400ECC784 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DEA78231F895CAA00345B38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D0C770320A8893400ECC784;
+			remoteInfo = "SwiftFestWatch Extension";
+		};
+		6D0C771020A8893500ECC784 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DEA78231F895CAA00345B38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D0C76F720A8893300ECC784;
+			remoteInfo = SwiftFestWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6D0C771820A8893500ECC784 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6D0C770520A8893400ECC784 /* SwiftFestWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D0C771A20A8893500ECC784 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6D0C771220A8893500ECC784 /* SwiftFestWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6D0C76F820A8893300ECC784 /* SwiftFestWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftFestWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0C76FB20A8893300ECC784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6D0C76FD20A8893400ECC784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D0C76FF20A8893400ECC784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D0C770420A8893400ECC784 /* SwiftFestWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SwiftFestWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D0C770920A8893400ECC784 /* MapInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInterfaceController.swift; sourceTree = "<group>"; };
+		6D0C770B20A8893400ECC784 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6D0C770D20A8893500ECC784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D0C770F20A8893500ECC784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D0C771F20A895C400ECC784 /* WatchManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchManager.swift; sourceTree = "<group>"; };
+		6D0C772320A8E59700ECC784 /* ReservationDetailsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDetailsInterfaceController.swift; sourceTree = "<group>"; };
+		6D0C772520A8E5BC00ECC784 /* EditReservationInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditReservationInterfaceController.swift; sourceTree = "<group>"; };
+		6D81DBEF209502CD0030987B /* ReservationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationDetailsViewController.swift; sourceTree = "<group>"; };
+		6D92849A2083DB84000B5C7B /* CreateReservationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateReservationViewController.swift; sourceTree = "<group>"; };
+		6DAE0A6C20B1AF160070EFB6 /* StepperInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperInterfaceController.swift; sourceTree = "<group>"; };
+		6DB8CB4A1FA52A3F0038365A /* RestaurantsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsTableViewController.swift; sourceTree = "<group>"; };
+		6DB8CB4D1FA533450038365A /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		6DB8CB4F1FA812800038365A /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
+		6DD91784208BF0E700AD31C6 /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		6DD91786208BF44300AD31C6 /* ReservationsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationsTableViewController.swift; sourceTree = "<group>"; };
+		6DEA782B1F895CAA00345B38 /* SwiftFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DEA782E1F895CAA00345B38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6DEA78331F895CAA00345B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DEA78351F895CAA00345B38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DEA78381F895CAA00345B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DEA783A1F895CAA00345B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D0C770120A8893400ECC784 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DEA78281F895CAA00345B38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D0C76F920A8893300ECC784 /* SwiftFestWatch */ = {
+			isa = PBXGroup;
+			children = (
+				6D0C76FA20A8893300ECC784 /* Interface.storyboard */,
+				6D0C76FD20A8893400ECC784 /* Assets.xcassets */,
+				6D0C76FF20A8893400ECC784 /* Info.plist */,
+			);
+			path = SwiftFestWatch;
+			sourceTree = "<group>";
+		};
+		6D0C770820A8893400ECC784 /* SwiftFestWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6D0C770D20A8893500ECC784 /* Assets.xcassets */,
+				6D0C770B20A8893400ECC784 /* ExtensionDelegate.swift */,
+				6D0C770F20A8893500ECC784 /* Info.plist */,
+				6D0C770920A8893400ECC784 /* MapInterfaceController.swift */,
+				6D0C772320A8E59700ECC784 /* ReservationDetailsInterfaceController.swift */,
+				6D0C772520A8E5BC00ECC784 /* EditReservationInterfaceController.swift */,
+				6DAE0A6C20B1AF160070EFB6 /* StepperInterfaceController.swift */,
+			);
+			path = "SwiftFestWatch Extension";
+			sourceTree = "<group>";
+		};
+		6D0C771E20A895C400ECC784 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				6D0C771F20A895C400ECC784 /* WatchManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		6D81DBF1209502D40030987B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D81DBF3209502F20030987B /* Reservation */,
+				6D81DBF2209502E30030987B /* Restaurant */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6D81DBF2209502E30030987B /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				6D92849A2083DB84000B5C7B /* CreateReservationViewController.swift */,
+				6DB8CB4F1FA812800038365A /* RestaurantDetailViewController.swift */,
+				6DB8CB4A1FA52A3F0038365A /* RestaurantsTableViewController.swift */,
+			);
+			path = Restaurant;
+			sourceTree = "<group>";
+		};
+		6D81DBF3209502F20030987B /* Reservation */ = {
+			isa = PBXGroup;
+			children = (
+				6D81DBEF209502CD0030987B /* ReservationDetailsViewController.swift */,
+				6DD91786208BF44300AD31C6 /* ReservationsTableViewController.swift */,
+			);
+			path = Reservation;
+			sourceTree = "<group>";
+		};
+		6DB8CB4C1FA532BC0038365A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DB8CB4D1FA533450038365A /* Restaurant.swift */,
+				6DD91784208BF0E700AD31C6 /* Reservation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6DEA78221F895CAA00345B38 = {
+			isa = PBXGroup;
+			children = (
+				6DEA782D1F895CAA00345B38 /* SwiftFest */,
+				6D0C76F920A8893300ECC784 /* SwiftFestWatch */,
+				6D0C770820A8893400ECC784 /* SwiftFestWatch Extension */,
+				6DEA782C1F895CAA00345B38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DEA782C1F895CAA00345B38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DEA782B1F895CAA00345B38 /* SwiftFest.app */,
+				6D0C76F820A8893300ECC784 /* SwiftFestWatch.app */,
+				6D0C770420A8893400ECC784 /* SwiftFestWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DEA782D1F895CAA00345B38 /* SwiftFest */ = {
+			isa = PBXGroup;
+			children = (
+				6D0C771E20A895C400ECC784 /* Managers */,
+				6DB8CB4C1FA532BC0038365A /* Models */,
+				6D81DBF1209502D40030987B /* Views */,
+				6DEA782E1F895CAA00345B38 /* AppDelegate.swift */,
+				6DEA78321F895CAA00345B38 /* Main.storyboard */,
+				6DEA78351F895CAA00345B38 /* Assets.xcassets */,
+				6DEA78371F895CAA00345B38 /* LaunchScreen.storyboard */,
+				6DEA783A1F895CAA00345B38 /* Info.plist */,
+			);
+			path = SwiftFest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D0C76F720A8893300ECC784 /* SwiftFestWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D0C771920A8893500ECC784 /* Build configuration list for PBXNativeTarget "SwiftFestWatch" */;
+			buildPhases = (
+				6D0C76F620A8893300ECC784 /* Resources */,
+				6D0C771820A8893500ECC784 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D0C770720A8893400ECC784 /* PBXTargetDependency */,
+			);
+			name = SwiftFestWatch;
+			productName = SwiftFestWatch;
+			productReference = 6D0C76F820A8893300ECC784 /* SwiftFestWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6D0C770320A8893400ECC784 /* SwiftFestWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D0C771720A8893500ECC784 /* Build configuration list for PBXNativeTarget "SwiftFestWatch Extension" */;
+			buildPhases = (
+				6D0C770020A8893400ECC784 /* Sources */,
+				6D0C770120A8893400ECC784 /* Frameworks */,
+				6D0C770220A8893400ECC784 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftFestWatch Extension";
+			productName = "SwiftFestWatch Extension";
+			productReference = 6D0C770420A8893400ECC784 /* SwiftFestWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		6DEA782A1F895CAA00345B38 /* SwiftFest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DEA78531F895CAA00345B38 /* Build configuration list for PBXNativeTarget "SwiftFest" */;
+			buildPhases = (
+				6DEA78271F895CAA00345B38 /* Sources */,
+				6DEA78281F895CAA00345B38 /* Frameworks */,
+				6DEA78291F895CAA00345B38 /* Resources */,
+				6D0C771A20A8893500ECC784 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D0C771120A8893500ECC784 /* PBXTargetDependency */,
+			);
+			name = SwiftFest;
+			productName = SwiftFest;
+			productReference = 6DEA782B1F895CAA00345B38 /* SwiftFest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DEA78231F895CAA00345B38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Matt Dias";
+				TargetAttributes = {
+					6D0C76F720A8893300ECC784 = {
+						CreatedOnToolsVersion = 9.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					6D0C770320A8893400ECC784 = {
+						CreatedOnToolsVersion = 9.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					6DEA782A1F895CAA00345B38 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6DEA78261F895CAA00345B38 /* Build configuration list for PBXProject "SwiftFest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DEA78221F895CAA00345B38;
+			productRefGroup = 6DEA782C1F895CAA00345B38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DEA782A1F895CAA00345B38 /* SwiftFest */,
+				6D0C76F720A8893300ECC784 /* SwiftFestWatch */,
+				6D0C770320A8893400ECC784 /* SwiftFestWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D0C76F620A8893300ECC784 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0C76FE20A8893400ECC784 /* Assets.xcassets in Resources */,
+				6D0C76FC20A8893300ECC784 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D0C770220A8893400ECC784 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DAE0A6B20A91E5B0070EFB6 /* Assets.xcassets in Resources */,
+				6D0C770E20A8893500ECC784 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DEA78291F895CAA00345B38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DEA78391F895CAA00345B38 /* LaunchScreen.storyboard in Resources */,
+				6DEA78361F895CAA00345B38 /* Assets.xcassets in Resources */,
+				6DEA78341F895CAA00345B38 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D0C770020A8893400ECC784 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0C772420A8E59700ECC784 /* ReservationDetailsInterfaceController.swift in Sources */,
+				6D0C772220A896C200ECC784 /* Restaurant.swift in Sources */,
+				6D0C770C20A8893400ECC784 /* ExtensionDelegate.swift in Sources */,
+				6D0C770A20A8893400ECC784 /* MapInterfaceController.swift in Sources */,
+				6DAE0A6D20B1AF160070EFB6 /* StepperInterfaceController.swift in Sources */,
+				6D0C772620A8E5BC00ECC784 /* EditReservationInterfaceController.swift in Sources */,
+				6D0C772120A896BE00ECC784 /* Reservation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DEA78271F895CAA00345B38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D81DBF0209502CD0030987B /* ReservationDetailsViewController.swift in Sources */,
+				6DB8CB4B1FA52A3F0038365A /* RestaurantsTableViewController.swift in Sources */,
+				6D0C772020A895C400ECC784 /* WatchManager.swift in Sources */,
+				6DD91787208BF44300AD31C6 /* ReservationsTableViewController.swift in Sources */,
+				6DEA782F1F895CAA00345B38 /* AppDelegate.swift in Sources */,
+				6DD91785208BF0E700AD31C6 /* Reservation.swift in Sources */,
+				6DB8CB501FA812800038365A /* RestaurantDetailViewController.swift in Sources */,
+				6D92849B2083DB84000B5C7B /* CreateReservationViewController.swift in Sources */,
+				6DB8CB4E1FA533450038365A /* Restaurant.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D0C770720A8893400ECC784 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D0C770320A8893400ECC784 /* SwiftFestWatch Extension */;
+			targetProxy = 6D0C770620A8893400ECC784 /* PBXContainerItemProxy */;
+		};
+		6D0C771120A8893500ECC784 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D0C76F720A8893300ECC784 /* SwiftFestWatch */;
+			targetProxy = 6D0C771020A8893500ECC784 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6D0C76FA20A8893300ECC784 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D0C76FB20A8893300ECC784 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		6DEA78321F895CAA00345B38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DEA78331F895CAA00345B38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DEA78371F895CAA00345B38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DEA78381F895CAA00345B38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D0C771320A8893500ECC784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z4ZDG98FM;
+				IBSC_MODULE = SwiftFestWatch_Extension;
+				INFOPLIST_FILE = SwiftFestWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdias.SwiftFest.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		6D0C771420A8893500ECC784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z4ZDG98FM;
+				IBSC_MODULE = SwiftFestWatch_Extension;
+				INFOPLIST_FILE = SwiftFestWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdias.SwiftFest.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		6D0C771520A8893500ECC784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z4ZDG98FM;
+				INFOPLIST_FILE = "SwiftFestWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdias.SwiftFest.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		6D0C771620A8893500ECC784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z4ZDG98FM;
+				INFOPLIST_FILE = "SwiftFestWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdias.SwiftFest.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		6DEA78511F895CAA00345B38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6DEA78521F895CAA00345B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DEA78541F895CAA00345B38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z4ZDG98FM;
+				INFOPLIST_FILE = SwiftFest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdias.SwiftFest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6DEA78551F895CAA00345B38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3Z4ZDG98FM;
+				INFOPLIST_FILE = SwiftFest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdias.SwiftFest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D0C771720A8893500ECC784 /* Build configuration list for PBXNativeTarget "SwiftFestWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D0C771520A8893500ECC784 /* Debug */,
+				6D0C771620A8893500ECC784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D0C771920A8893500ECC784 /* Build configuration list for PBXNativeTarget "SwiftFestWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D0C771320A8893500ECC784 /* Debug */,
+				6D0C771420A8893500ECC784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DEA78261F895CAA00345B38 /* Build configuration list for PBXProject "SwiftFest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DEA78511F895CAA00345B38 /* Debug */,
+				6DEA78521F895CAA00345B38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DEA78531F895CAA00345B38 /* Build configuration list for PBXNativeTarget "SwiftFest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DEA78541F895CAA00345B38 /* Debug */,
+				6DEA78551F895CAA00345B38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DEA78231F895CAA00345B38 /* Project object */;
+}

@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "5a45b739-2105-87c3-c8e4-833fc6f3420c",
+		"name": "SwiftFest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Restaurant",
+			"description": "",
+			"item": [
+				{
+					"name": "Create Restaurant",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\n\t\"name\": \"The Beehive\",\n\t\"phoneNumber\": \"1 (617) 423-0069\",\n\t\"latitude\": 42.34469610,\n\t\"longitude\": -71.07144170,\n\t\"website\": \"http://www.beehiveboston.com\"\n},\n{\n\t\"name\": \"B & G Oysters LTD\",\n\t\"phoneNumber\": \"1 (617) 423-0550\",\n\t\"latitude\": 42.34387800,\n\t\"longitude\": -71.07124300,\n\t\"website\": \"http://www.bandgoysters.com\"\n},\n{\n\t\"name\": \"Barcelona Wine Bar South End\",\n\t\"phoneNumber\": \"1 (617) 266-2600\",\n\t\"latitude\": 42.34457682,\n\t\"longitude\": -71.07084835,\n\t\"website\": \"http://www.barcelonawinebar.com\"\n},\n{\n\t\"name\": \"Aquitaine\",\n\t\"phoneNumber\": \"1 (617) 424-8577\",\n\t\"latitude\": 42.34381050,\n\t\"longitude\": -71.07235150,\n\t\"website\": \"http://www.aquitaineboston.com\"\n},\n{\n\t\"name\": \"Mela\",\n\t\"phoneNumber\": \"1 (617) 859-4805\",\n\t\"latitude\": 42.34329700,\n\t\"longitude\": -71.07245800,\n\t\"website\": \"http://www.melaboston.com\"\n},\n{\n\t\"name\": \"The Friendly Toast\",\n\t\"phoneNumber\": \"1 (617) 456-7849\",\n\t\"latitude\": 42.34851000,\n\t\"longitude\": -71.07324600,\n\t\"website\": \"http://www.thefriendlytoast.com\"\n},\n{\n\t\"name\": \"Mike & Patty's\",\n\t\"phoneNumber\": \"1 (617) 423-3447\",\n\t\"latitude\": 42.34853462,\n\t\"longitude\": -71.06792141,\n\t\"website\": \"http://mikeandpattys.com\"\n},\n{\n\t\"name\": \"The Salty Pig\",\n\t\"phoneNumber\": \"1 (617) 536-6200\",\n\t\"latitude\": 42.34686093,\n\t\"longitude\": -71.07599080,\n\t\"website\": \"http://thesaltypig.com\"\n},\n{\n\t\"name\": \"Flour bakery and cafe\",\n\t\"phoneNumber\": \"1 (617) 437-7700\",\n\t\"latitude\": 42.34837147,\n\t\"longitude\": -71.07359827,\n\t\"website\": \"https://flourbakery.com/locations/back-bay/\"\n},\n{\n\t\"name\": \"Addis Red Sea\",\n\t\"phoneNumber\": \"1 (617) 426-8727\",\n\t\"latitude\": 42.34401000,\n\t\"longitude\": -71.07104800,\n\t\"website\": \"http://www.addisredsea.com\"\n}]"
+						},
+						"url": {
+							"raw": "localhost:8080/restaurants",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restaurants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Restaurants",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"test\",\n\t\"phoneNumber\": \"1\",\n\t\"latitude\": 12.34,\n\t\"longitude\": 56.78,\n\t\"website\": \"www.home.com\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/restaurants",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restaurants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Specific Restaurant",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/restaurants/20",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restaurants",
+								"20"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reservation",
+			"description": "",
+			"item": [
+				{
+					"name": "Create Reservation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"restaurantId\": 4,\n\t\"partySize\": 2,\n\t\"date\": \"04/21/2018, 17:30\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/reservation",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Specific Reservation",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"restaurantId\": 4,\n\t\"partySize\": 2,\n\t\"date\": \"some date\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/reservation/20",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Reservations",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"test\",\n\t\"phoneNumber\": \"1\",\n\t\"latitude\": 12.34,\n\t\"longitude\": 56.78,\n\t\"website\": \"www.home.com\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/reservation",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Specific Reservation",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/reservation/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Specific Restaurant",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"date\": \"05/25/2018, 12:10\",\n\t\"partySize\": 1\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/reservation/43",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"reservation",
+								"43"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

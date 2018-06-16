@@ -1,0 +1,70 @@
+{
+	"name": "The Beehive",
+	"phoneNumber": "1 (617) 423-0069",
+	"latitude": 42.34469610,
+	"longitude": -71.07144170,
+	"website": "http://www.beehiveboston.com"
+},
+{
+	"name": "B & G Oysters LTD",
+	"phoneNumber": "1 (617) 423-0550",
+	"latitude": 42.34387800,
+	"longitude": -71.07124300,
+	"website": "http://www.bandgoysters.com"
+},
+{
+	"name": "Barcelona Wine Bar South End",
+	"phoneNumber": "1 (617) 266-2600",
+	"latitude": 42.34457682,
+	"longitude": -71.07084835,
+	"website": "http://www.barcelonawinebar.com"
+},
+{
+	"name": "Aquitaine",
+	"phoneNumber": "1 (617) 424-8577",
+	"latitude": 42.34381050,
+	"longitude": -71.07235150,
+	"website": "http://www.aquitaineboston.com"
+},
+{
+	"name": "Mela",
+	"phoneNumber": "1 (617) 859-4805",
+	"latitude": 42.34329700,
+	"longitude": -71.07245800,
+	"website": "http://www.melaboston.com"
+},
+{
+	"name": "The Friendly Toast",
+	"phoneNumber": "1 (617) 456-7849",
+	"latitude": 42.34851000,
+	"longitude": -71.07324600,
+	"website": "http://www.thefriendlytoast.com"
+},
+{
+	"name": "Mike & Patty's",
+	"phoneNumber": "1 (617) 423-3447",
+	"latitude": 42.34853462,
+	"longitude": -71.06792141,
+	"website": "http://mikeandpattys.com"
+},
+{
+	"name": "The Salty Pig",
+	"phoneNumber": "1 (617) 536-6200",
+	"latitude": 42.34686093,
+	"longitude": -71.07599080,
+	"website": "http://thesaltypig.com"
+},
+{
+	"name": "Flour bakery and cafe",
+	"phoneNumber": "1 (617) 437-7700",
+	"latitude": 42.34837147,
+	"longitude": -71.07359827,
+	"website": "https://flourbakery.com/locations/back-bay/"
+},
+{
+	"name": "Addis Red Sea",
+	"phoneNumber": "1 (617) 426-8727",
+	"latitude": 42.34401000,
+	"longitude": -71.07104800,
+	"website": "http://www.addisredsea.com"
+}
