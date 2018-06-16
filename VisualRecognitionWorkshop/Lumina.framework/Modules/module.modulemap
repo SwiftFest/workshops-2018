@@ -1,0 +1,11 @@
+framework module Lumina {
+  umbrella header "Lumina.h"
+
+  export *
+  module * { export * }
+}
+
+module Lumina.Swift {
+    header "Lumina-Swift.h"
+    requires objc
+}
