@@ -13,5 +13,8 @@ let package = Package(
       name: "SwiftSyntaxExample",
       dependencies: []
     ),
+    .testTarget(
+      name: "SwiftSyntaxExampleTests",
+      dependencies: ["SwiftSyntaxExample"]),
   ]
 )
