@@ -6,11 +6,11 @@ import XCTest
 
 @testable import SwiftSyntaxExample
 
-public class ColonWhitespaceTests: SwiftSyntaxTestCase {
+public class ColonWhitespaceTests: XCTestCase {
   public func testFixesInvalidColonWhitespace() throws {
-    let sourceURL = URL(fileURLWithPath: "./TestResources/InvalidColonWhitespace.swift")
+    let sourceURL = testResource("InvalidColonWhitespace.swift")
     let source = try SourceFileSyntax.parse(sourceURL)
-    let expectedURL = URL(fileURLWithPath: "./TestResources/InvalidColonWhitespace.expected.swift")
+    let expectedURL = testResource("InvalidColonWhitespace.expected.swift")
     let expected = try SourceFileSyntax.parse(expectedURL)
 
     let whitespaceFixer = ColonWhitespace()
@@ -20,7 +20,7 @@ public class ColonWhitespaceTests: SwiftSyntaxTestCase {
   }
 
   public func testIgnoresValidColonWhitespace() throws {
-    let sourceURL = URL(fileURLWithPath: "./TestResources/InvalidColonWhitespace.expected.swift")
+    let sourceURL = testResource("InvalidColonWhitespace.expected.swift")
     let source = try SourceFileSyntax.parse(sourceURL)
     let originalDescription = source.description
 

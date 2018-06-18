@@ -7,9 +7,9 @@ import XCTest
 
 @testable import SwiftSyntaxExample
 
-public class ErrorOnForceUnwrapTests: SwiftSyntaxTestCase {
+public class ErrorOnForceUnwrapTests: XCTestCase {
   public func testHasForceUnwrap() throws {
-    let sourceURL = URL(fileURLWithPath: "./TestResources/HasForceUnwrap.swift")
+    let sourceURL = testResource("HasForceUnwrap.swift")
     let source = try SourceFileSyntax.parse(sourceURL)
     
     let engine = DiagnosticEngine()
@@ -24,7 +24,7 @@ public class ErrorOnForceUnwrapTests: SwiftSyntaxTestCase {
   }
 
   public func testDoesNotHaveForceUnwrap() throws {
-    let sourceURL = URL(fileURLWithPath: "./TestResources/DoesNotHaveForceUnwrap.swift")
+    let sourceURL = testResource("DoesNotHaveForceUnwrap.swift")
     let source = try SourceFileSyntax.parse(sourceURL)
     
     let engine = DiagnosticEngine()
