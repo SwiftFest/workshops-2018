@@ -10,10 +10,19 @@ import XCTest
 public class ErrorOnForceUnwrapTests: XCTestCase {
   private class DiagnosticTrackingConsumer: DiagnosticConsumer {
     var registeredDiagnostics = [String]()
+    let diagnosticCount: Int
+
+    public init(_ diagnosticCount: Int) {
+      self.diagnosticCount = diagnosticCount
+    }
+
     func handle(_ diagnostic: Diagnostic) {
       registeredDiagnostics.append(diagnostic.message.text)
     }
-    func finalize() {}
+
+    func finalize() {
+      XCTAssertEqual(registeredDiagnostics.count, diagnosticCount)
+    }
   }
 
   public func testHasForceUnwrap() throws {
@@ -21,8 +30,8 @@ public class ErrorOnForceUnwrapTests: XCTestCase {
     let source = try SourceFileSyntax.parse(sourceURL)
     
     let engine = DiagnosticEngine()
-    let consumer = DiagnosticTrackingConsumer()
-    engine.addConsumer(DiagnosticTrackingConsumer())
+    let consumer = DiagnosticTrackingConsumer(1)
+    engine.addConsumer(consumer)
 
     let diagnoseForceUnwraps = DiagnoseForceUnwraps(
       file: sourceURL,
@@ -30,12 +39,28 @@ public class ErrorOnForceUnwrapTests: XCTestCase {
     )
 
     diagnoseForceUnwraps.visit(source)
-    XCTAssertEqual(consumer.registeredDiagnostics.count, 1)
+  }
+
+  public func testDoesNotHaveForceUnwrap() throws {
+    let sourceURL = URL(fileURLWithPath: "./TestResources/DoesNotHaveForceUnwrap.swift")
+    let source = try SourceFileSyntax.parse(sourceURL)
+    
+    let engine = DiagnosticEngine()
+    let consumer = DiagnosticTrackingConsumer(0)
+    engine.addConsumer(consumer)
+
+    let diagnoseForceUnwraps = DiagnoseForceUnwraps(
+      file: sourceURL,
+      diagnosticEngine: engine
+    )
+
+    diagnoseForceUnwraps.visit(source)
   }
 
   #if !os(macOS)
   static let allTests = [
     ErrorOnForceUnwrapTests.testHasForceUnwrap,
+    ErrorOnForceUnwrapTests.testDoesNotHaveForceUnwrap,
   ]
   #endif
 }
