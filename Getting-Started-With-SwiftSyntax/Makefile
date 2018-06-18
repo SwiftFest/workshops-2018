@@ -2,13 +2,13 @@
 # SPDX-License-Identifier: Apache-2.0
 .PHONY: build test xcodeproj open-xcode
 build:
-	swift build -c debug
+	TOOLCHAINS=swift xcrun swift build -c debug
 
 test:
-	swift test
+	TOOLCHAINS=swift xcrun swift test
 
 xcodeproj:
-	swift package generate-xcodeproj --xcconfig-overrides Package.xcconfig
+	TOOLCHAINS=swift xcrun swift package generate-xcodeproj --xcconfig-overrides Package.xcconfig
 
 open-xcode: xcodeproj
 	open ./SwiftSyntaxExample.xcodeproj
