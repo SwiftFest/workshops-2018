@@ -3,17 +3,19 @@
 
 import Foundation
 import SwiftSyntax
+import SwiftSyntaxExample
 
 func main() throws {
   // Ensure we are given a valid file path.
   guard let filePath = CommandLine.arguments.dropFirst().first else {
-    fatalError("usage: SwiftSyntaxExample [file]")
+    print("usage: \(CommandLine.arguments.first!) [file]")
+    return
   }
 
   // Create a new diagnostic engine.
   let engine = DiagnosticEngine()
 
-  // Create a diagnostic consumer that prints diagnostics as they are emitted.
+  // Create a diagnostic consumer that prints diagnostics to stderr.
   engine.addConsumer(PrintingDiagnosticConsumer())
 
   // Parse the current source file.
@@ -35,13 +37,13 @@ func main() throws {
   // Ask the whitespace fixer to rewrite the current file.
   let rewritten = whitespaceFixer.visit(testFile)
 
-  // Print the rewritten file contents.
-  print("Rewritten file:\n\(rewritten)")
+  // Print the rewritten file contents to stdout without adding a newline.
+  print(rewritten, terminator:"")
 }
 
 do {
   try main()
 } catch {
-  print("error: \(error)")
+  FileHandle.standardError.write("\(error)".data(using: .utf8)!)
   exit(-1)
 }
