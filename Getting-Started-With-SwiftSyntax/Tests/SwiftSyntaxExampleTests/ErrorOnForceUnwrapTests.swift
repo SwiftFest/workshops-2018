@@ -7,7 +7,7 @@ import XCTest
 
 @testable import SwiftSyntaxExample
 
-public class ErrorOnForceUnwrapTests: XCTestCase {
+public class ErrorOnForceUnwrapTests: SwiftSyntaxTestCase {
   private class DiagnosticTrackingConsumer: DiagnosticConsumer {
     var registeredDiagnostics = [String]()
     let diagnosticCount: Int

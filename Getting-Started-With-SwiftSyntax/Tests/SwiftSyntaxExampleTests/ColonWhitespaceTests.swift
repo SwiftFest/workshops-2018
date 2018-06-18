@@ -6,7 +6,7 @@ import XCTest
 
 @testable import SwiftSyntaxExample
 
-public class ColonWhitespaceTests: XCTestCase {
+public class ColonWhitespaceTests: SwiftSyntaxTestCase {
   public func testFixesInvalidColonWhitespace() throws {
     let sourceURL = URL(fileURLWithPath: "./TestResources/InvalidColonWhitespace.swift")
     let source = try SourceFileSyntax.parse(sourceURL)
