@@ -3,6 +3,13 @@
 This package includes some example code to help get acquainted with the
 SwiftSyntax API.
 
+## For Attendees on 2018-06-19
+
+Very recent snapshots are a bit harder to set up so please use the 2018-06-03
+toolchain snapshot:
+
+https://swift.org/builds/development/xcode/swift-DEVELOPMENT-SNAPSHOT-2018-06-03-a/swift-DEVELOPMENT-SNAPSHOT-2018-06-03-a-osx.pkg
+
 ## Structure
 
 This project includes two examples:
